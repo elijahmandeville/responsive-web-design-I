@@ -1,3 +1,320 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+} 
+body {
+	line-height: 1;
+} 
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+
+/* Your code starts here! */
+
+
+
+body {
+	padding-left: 15%;
+	padding-right: 15%;
+    padding-top: 1.2%;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+	text-decoration: none;
+	padding: 27px;
+	color: lightgray;
+	animation-name: header-animation;
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+header a:hover {
+	color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-div {
+    display: flex;
+    padding-top: 1.6%;
+    height: 50%;
+}
+
+.header-img {
+	height: 310px;
+	/* padding-top: 3%; */
+	/* padding-right: 4%; */
+}
+
+.page-top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-left: 15%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page-top-text {
+	font-size: 50px;
+	/* padding-top: 75px; */
+	text-align: center;
+}
+
+a .page-top-text {
+	font-size: 10px;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.page-top .page-top-text {
+	float: left;
+}
+
+div .get-started-text {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	border-spacing: 50px;
+	padding: 10px;
+	transition-property: border-color, color, background-color;
+	transition-duration: 0.3s;
+}
+
+div .get-started-text:hover {
+	border-color: white;
+	background-color: black;
+	color: white;
+}
+
+.top-line {
+	box-sizing: border-box;
+	background-color: gray;
+	height: 1px;
+	/* margin-top: 400px; */
+	margin-bottom: 17px;
+}
+
+.top-body {
+	display: flex;
+	padding-bottom: 45px;
+	padding-top: 20px;
+}
+
+.top-body div {
+	width: 50%;
+}
+
+.middle-img {
+	/* padding-left: 1%; */
+	padding-bottom: 45px;
+}
+
+.middle-img-div {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-body {
+	display: flex;
+}
+
+.bottom-body div{
+	width: 33%;
+	float: left;
+	padding: 10px 0;
+}
+
+.line-bottom {
+	box-sizing: border-box;
+	background-color: gray;
+	height: 1px;
+	margin-top: 40px;
+	margin-bottom: 17px;
+}
+
+address h3 {
+	padding-top: 45px;
+}
+
+.copyright {
+	padding-top: 43px;
+	text-align: center;
+	padding-bottom: 75px;
+}
+
+@media (max-width: 800px) {
+    .header-img {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        padding-left: 5%;
+	    padding-right: 5%;
+    }
+
+    .page-top {
+        justify-content: center;
+    }
+
+    .page-top-text {
+        font-size: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a .page-top-text {
+        font-size: 15px;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header a {
+        padding: 26px;
+    }
+
+    .logo-div {
+        justify-content: center;
+        padding-bottom: 5%;
+        padding-top: 2.5%;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+
+    .main-body {
+        width: 100%;
+        padding-left: 5%;
+	    padding-right: 5%;
+    }
+
+    .logo-div {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        border-top: 1px solid darkgray;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid darkgray;
+    }
+    
+    .top-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .top-body .about {
+        padding-top: 6%;
+    }
+
+    .top-body div {
+        width: 100%;
+    }
+
+    .bottom-body {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .bottom-body div {
+        width: 100%;
+    }
+}
